@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.content{
+  position: relative;
+  width: 1000px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+img#dino{
+  position: relative;
+  left: 40px;
+  top: 0px;
+  width: 70px;
+  height: 70px;
+}
+
+img.animate{
+  animation: jump 500ms linear;
+}
+
+@keyframes jump{
+
+  50%{
+    top: -100px;
+  }
+
+  100%{
+   top: 0;
+  } 
+}
+
+img#block{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  right: -750px;
+  
+}
+
+img#block.devagar{
+  animation: animate 3s linear infinite;
+}
+
+img#block.normal{
+  animation: animate 2s linear infinite;
+}
+
+img#block.rapido{
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    right: -750px;
+  }
+
+  100%{
+    right: 50px;
+  }
+}
+
+div.content button{
+  background: transparent;
+  border: 1px solid #ccc;
+  color: #000;
+
+  padding: 20px 50px;
+}
+
+div.content button:hover{
+  opacity: 0.8;
+}
+
+div.content button:active{
+  transform: scale(1.2);
+}
+
+div.content button#reset-btn{
+  position: absolute;
+  top: 40px;
+  right: 500px;
+}
+
+div.content button#sair-btn{
+  position: absolute;
+  top: 40px;
+  right: 350px;
+}
+
+div.content div.buttons{
+  position: absolute;
+  top: 20px;
+  right: 300px;
+}
