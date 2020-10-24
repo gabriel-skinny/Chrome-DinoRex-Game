@@ -15,6 +15,7 @@ div.content{
 
   display: flex;
   align-items: flex-end;
+  z-index: 20;
 }
 
 img#dino{
@@ -23,6 +24,7 @@ img#dino{
   top: 0px;
   width: 70px;
   height: 70px;
+  z-index: 10;
 }
 
 img.animate{
@@ -46,7 +48,7 @@ img#block{
   height: 50px;
   top: 0;
   right: -750px;
-  
+  z-index: 5;
 }
 
 img#block.devagar{
